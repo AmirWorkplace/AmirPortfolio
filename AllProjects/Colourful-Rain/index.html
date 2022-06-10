@@ -1,0 +1,45 @@
+E<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Perfact Dropdown Menu + Web</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
+    <script src="https://kit.fontawesome.com/625708b356.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <script>
+    function rain(){
+      let amount = 400;
+      let body = document.querySelector('body');
+      let i = 0;
+      while(i < amount){
+        let drop = document.createElement('i');
+
+        let size = Math.random() * 5;
+        let posX = Math.floor(Math.random() * window.innerWidth);
+        let delay = Math.random() * -20;
+        let duration = Math.random() * 5;
+
+        drop.style.width = 0.2 + size+'px';
+        drop.style.left = posX + 'px';
+        drop.style.animationDelay = delay+'s';
+        drop.style.animationDuration = 1 + duration+'s';
+        body.appendChild(drop);
+
+        i++;
+      }
+    }       
+
+    rain();
+  </script>
+</body>
+
+</html>

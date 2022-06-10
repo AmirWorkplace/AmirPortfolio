@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialMedi</title>
+
+    <link rel="stylesheet" href="JavaScript/main.js">
+    <link rel="stylesheet" href="Framework/Web-fontAwosome/css/all.min.css">
+    <link rel="stylesheet" href="Framework/Web-fontAwosome/js/all.min.js">
+    <link rel="stylesheet" href="Framework/Bootstrap_5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Framework/Bootstrap_5/js/bootstrap.bundle.min.js">
+
+    <!-- <link rel="stylesheet" href="CreatePostPlugIn/index.html">
+    <link rel="stylesheet" href="CreatePostPlugIn/"> -->
+    <link rel="stylesheet" href="CSS/alert.css">
+    <link rel="stylesheet" href="CSS/style_create_post_plugin.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/styleMiddle.css">
+
+</head>
+
+<body>
+
+
+    <!-- nav -->
+
+    <nav>
+        <!-- nav Left Started -->
+        <div class="nav-left">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><img src="images/notification.png"></li>
+                <li><img src="images/inbox.png"></li>
+                <li><img src="images/video.png"></li>
+            </ul>
+
+
+            <!-- Syed AMir ALi -->
+
+            <!-- <div id="dark-btn">
+                <span id="darkBtnSpan"></span>
+            </div> -->
+        </div>
+        <!-- nav Left Ends -->
+
+        <!-- nav Right Started -->
+        <div class="nav-right">
+
+            <!-- Search Bar -->
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" name="search_main" placeholder="Search in Socialbook">
+            </div>
+
+            <!-- user-icon -->
+            <div class="nav-user-icon online" onclick="MenuToggle()">
+                <img src="images/profile-pic.png">
+            </div>
+
+        </div>
+
+        <!-- Settings Menu Started -->
+        <div>
+            <div class="sittings-menu" id="SettingsDropdown">
+
+                <div class="sittings-menu-inner">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div class="msd">
+                            <p>Henry Nichols</p>
+                            <a href="#">See Your Profiles</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user-profile">
+                        <img src="images/feedback.png">
+                        <div class="msd">
+                            <p>Give Feedback</p>
+                            <a href="#">Help us to improe New Design</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Dark System -->
+                    <div id="dark-btn">
+                        <span id="darkBtnSpan"></span>
+                    </div>
+
+
+                    <div class="sitting-links">
+                        <img src="images/setting.png" class="sitting-icon">
+                        <a href="#">Settings & Privacy
+                            <img src="images/arrow.png" width="10px">
+                        </a>
+                    </div>
+
+                    <div class="sitting-links">
+                        <img src="images/help.png" class="sitting-icon">
+                        <a href="#">Help & Support
+                            <img src="images/arrow.png" width="10px">
+                        </a>
+                    </div>
+
+                    <div class="sitting-links">
+                        <img src="images/display.png" class="sitting-icon">
+                        <a href="#">Display & Accessibility
+                            <img src="images/arrow.png" width="10px">
+                        </a>
+                    </div>
+
+                    <div class="sitting-links">
+                        <img src="images/logout.png" class="sitting-icon">
+                        <a href="#">LogOut
+                            <img src="images/arrow.png" width="10px">
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Settings Menu Ends -->
+
+
+        <!-- nav Right Ends -->
+    </nav>
+
+    <!-- Container Started-->
+    <div class="conteiner">
+
+        <!-- Left Container Started-->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png"> Lattest News</a>
+                <a href="#"><img src="images/friends.png"> Friends</a>
+                <a href="#"><img src="images/group.png"> Groups</a>
+                <a href="#"><img src="images/marketplace.png"> Marketplace</a>
+                <a href="#"><img src="images/watch.png"> Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="images/shortcut-1.png">Web Developments</a>
+                <a href="#"><img src="images/shortcut-2.png">web Design Course</a>
+                <a href="#"><img src="images/shortcut-3.png">Full Stuck Developments</a>
+                <a href="#"><img src="images/shortcut-4.png">Website Expart</a>
+            </div>
+        </div>
+        <!-- Left Container Ends -->
+
+        <!-- Main Container Started-->
+        <div class="main-content">
+
+            <div class="story-gallery">
+
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Post Story</p>
+                </div>
+
+                <div class="story story2">
+                    <img src="images/member-1.png">
+                    <p>Alison</p>
+                </div>
+
+                <div class="story story3">
+                    <img src="images/member-2.png">
+                    <p>Jackson</p>
+                </div>
+
+                <div class="story story4">
+                    <img src="images/member-3.png">
+                    <p>Smona</p>
+                </div>
+
+                <div class="story story5">
+                    <img src="images/member-4.png">
+                    <p>Jhon Doe</p>
+                </div>
+
+            </div>
+
+            <!-- Right POST container -->
+
+            <div class="right-post-conteiner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div class="msd">
+                        <p>Henry Nichols</p>
+                        <small>Public <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+
+                    <!-- Huge Change Started -->
+
+                    <textarea class="textarea-btn" name="write_post" id="GoToCreatePostPage" rows="3" placeholder="What's on your mind, Henry?"></textarea>
+
+
+                    <!-- Worrior -->
+                    <!-- Huge Change Started -->
+
+                    <div class="add-post-link">
+                        <a href="#"><img src="images/live-video.png"> Live<span>t</span>Video</a>
+                        <a href="#"><img src="images/photo.png"> Photo/Video</a>
+                        <a href="#"><img src="images/feeling.png"> Feeling/Activity</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Post Container -->
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div class="msd">
+                            <p>Henry Nichols</p>
+                            <span>9 March 2022, 01:20 PM</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                <p class="post-text">How To Make A Website Like <span> @Facebook</span> Using HTML And CSS | Social Media Website Design Step By Step. <a href="#"> #EasyTutorial </a> <a href="#"> #YoutubeChannel </a></p>
+
+                <img src="images/feed-image-1.png" class="post-img">
+
+                <div class="reacts">
+                    <div class="react-shower">
+                        <span class="like-status"><i class="fa-solid fa-thumbs-up"></i> <a href="#">You, Khali Hasan, S.A Sabbir Ahmed and 100 Others</a></span>
+                        <span class="cmnt-status"><a href="#">120 Comments</a></span>
+                        <span class="share-status"><a href="#">13 Share</a></span>
+                    </div>
+                </div>
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div class="like-bton f1"><img src="images/like-blue.png">Like</div>
+                        <div class="cmnt-bton f1"><img src="images/comments.png">Comment</div>
+                        <div class="share-bton f1"><img src="images/share.png">Share</div>
+                    </div>
+                    <div class="post-profile-icon">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Post Container -->
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div class="msd">
+                            <p>Henry Nichols</p>
+                            <span>9 March 2022, 01:20 PM</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                <p class="post-text">How To Make A Website Like <span> @Facebook</span> Using HTML And CSS | Social Media Website Design Step By Step. <a href="#"> #EasyTutorial </a> <a href="#"> #YoutubeChannel </a></p>
+
+                <img src="images/feed-image-2.png" class="post-img">
+
+                <div class="reacts">
+                    <div class="react-shower">
+                        <span class="like-status"><i class="fa-solid fa-thumbs-up"></i> <a href="#">You, Khali Hasan, S.A Sabbir Ahmed and 12.1M Others</a></span>
+                        <span class="cmnt-status"><a href="#">1.2M Comments</a></span>
+                        <span class="share-status"><a href="#">19k Share</a></span>
+                    </div>
+                </div>
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div class="like-bton f1"><img src="images/like-blue.png">Like</div>
+                        <div class="cmnt-bton f1"><img src="images/comments.png">Comment</div>
+                        <div class="share-bton f1"><img src="images/share.png">Share</div>
+                    </div>
+                    <div class="post-profile-icon">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div class="msd">
+                            <p>Henry Nichols</p>
+                            <span>9 March 2022, 01:20 PM</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                <p class="post-text">How To Make A Website Like <span> @Facebook</span> Using HTML And CSS | Social Media Website Design Step By Step. <a href="#"> #EasyTutorial </a> <a href="#"> #YoutubeChannel </a></p>
+
+                <img src="images/feed-image-3.png" class="post-img">
+
+                <div class="reacts">
+                    <div class="react-shower">
+                        <span class="like-status"><i class="fa-solid fa-thumbs-up"></i> <a href="#">You, Khali Hasan, S.A Sabbir Ahmed and 100 Others</a></span>
+                        <span class="cmnt-status"><a href="#">120 Comments</a></span>
+                        <span class="share-status"><a href="#">13 Share</a></span>
+                    </div>
+                </div>
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div class="like-bton f1"><img src="images/like-blue.png">Like</div>
+                        <div class="cmnt-bton f1"><img src="images/comments.png">Comment</div>
+                        <div class="share-bton f1"><img src="images/share.png">Share</div>
+                    </div>
+                    <div class="post-profile-icon">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Post Container -->
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div class="msd">
+                            <p>Henry Nichols</p>
+                            <span>9 March 2022, 01:20 PM</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                <p class="post-text">How To Make A Website Like <span> @Facebook</span> Using HTML And CSS | Social Media Website Design Step By Step. <a href="#"> #EasyTutorial </a> <a href="#"> #YoutubeChannel </a></p>
+
+                <img src="images/feed-image-4.png" class="post-img">
+
+                <div class="reacts">
+                    <div class="react-shower">
+                        <span class="like-status"><i class="fa-solid fa-thumbs-up"></i> <a href="#">You, Khali Hasan, S.A Sabbir Ahmed and 100 Others</a></span>
+                        <span class="cmnt-status"><a href="#">120 Comments</a></span>
+                        <span class="share-status"><a href="#">13 Share</a></span>
+                    </div>
+                </div>
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div class="like-bton f1"><img src="images/like-blue.png">Like</div>
+                        <div class="cmnt-bton f1"><img src="images/comments.png">Comment</div>
+                        <div class="share-bton f1"><img src="images/share.png">Share</div>
+                    </div>
+                    <div class="post-profile-icon">
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- right-post-conteiner -->
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div class="msd">
+                            <p>Henry Nichols</p>
+                            <span>9 March 2022, 01:20 PM</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                <p class="post-text">How To Make A Website Like <span> @Facebook</span> Using HTML And CSS | Social Media Website Design Step By Step. <a href="#"> #EasyTutorial </a> <a href="#"> #YoutubeChannel </a></p>
+
+                <img src="images/feed-image-5.png" class="post-img">
+
+                <div class="reacts">
+                    <div class="react-shower">
+                        <span class="like-status"><i class="fa-solid fa-thumbs-up"></i> <a href="#">You, Khali Hasan, S.A Sabbir Ahmed and 100 Others</a></span>
+                        <span class="cmnt-status"><a href="#">120 Comments</a></span>
+                        <span class="share-status"><a href="#">13 Share</a></span>
+                    </div>
+                </div>
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div class="like-bton f1"><img src="images/like-blue.png">Like</div>
+                        <div class="cmnt-bton f1"><img src="images/comments.png">Comment</div>
+                        <div class="share-bton f1"><img src="images/share.png">Share</div>
+                    </div>
+                    <div class="post-profile-icon">
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="load-more-btn">
+                <button><a href="#">See Less!</a></button>
+            </div>
+
+
+        </div>
+        <!-- Main Container Ends -->
+
+
+        <!-- Right Container Started-->
+        <div class="right-sidebar" id="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#" id="RightContainer" onclick="RightContainerToggle()"><span class="seeAll" onclick="RightContainerToggleBtn()">See All</span></a>
+            </div>
+
+            <!-- Event Starts -->
+
+            <div class="event">
+
+                <!-- Left Event Starts -->
+                <div class="left-event">
+                    <h3>21<sup>st</sup> </h3>
+                    <span>February</span>
+                </div>
+                <!-- Left Event Ends -->
+
+                <!-- Right Event Starts -->
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <a href="#">
+                        <p><i class="fas fa-map-marker-alt"></i> Willson Tech Perks </p>
+                    </a>
+                    <a href="#">More Info</a>
+                </div>
+                <!-- Right Event Ends -->
+            </div>
+            <!-- Event Ends -->
+
+            <!-- Event Starts -->
+            <div class="event">
+
+                <!-- Left Event Starts -->
+                <div class="left-event">
+                    <h3>31<sup>st</sup> </h3>
+                    <span>January</span>
+                </div>
+                <!-- Left Event Ends -->
+
+                <!-- Right Event Starts -->
+                <div class="right-event">
+                    <h4>Sweet Place</h4>
+                    <a href="#">
+                        <p><i class="fas fa-map-marker-alt"></i> Modhutila Eco Perks</p>
+                    </a>
+                    <a href="#">More Info</a>
+                </div>
+                <!-- Right Event Ends -->
+            </div>
+            <!-- Event Ends -->
+
+            <!-- Event Starts -->
+            <div class="event">
+
+                <!-- Left Event Starts -->
+                <div class="left-event">
+                    <h3>16<sup>th</sup> </h3>
+                    <span>November</span>
+                </div>
+                <!-- Left Event Ends -->
+
+                <!-- Right Event Starts -->
+                <div class="right-event">
+                    <h4>Magic Media</h4>
+                    <a href="#">
+                        <p><i class="fas fa-map-marker-alt"></i> Sceincefiction Perks</p>
+                    </a>
+                    <a href="#">More Info</a>
+                </div>
+                <!-- Right Event Ends -->
+            </div>
+
+            <div id="rightContainerEvents">
+                <!-- Event Ends -->
+
+                <!-- Event Starts -->
+                <div class="event">
+
+                    <!-- Left Event Starts -->
+                    <div class="left-event">
+                        <h3>16<sup>th</sup> </h3>
+                        <span>November</span>
+                    </div>
+                    <!-- Left Event Ends -->
+
+                    <!-- Right Event Starts -->
+                    <div class="right-event">
+                        <h4>Magic Media</h4>
+                        <a href="#">
+                            <p><i class="fas fa-map-marker-alt"></i> Sceincefiction Perks</p>
+                        </a>
+                        <a href="#">More Info</a>
+                    </div>
+                    <!-- Right Event Ends -->
+                </div>
+                <!-- Event Ends -->
+
+                <!-- Event Starts -->
+                <div class="event">
+
+                    <!-- Left Event Starts -->
+                    <div class="left-event">
+                        <h3>16<sup>th</sup> </h3>
+                        <span>November</span>
+                    </div>
+                    <!-- Left Event Ends -->
+
+                    <!-- Right Event Starts -->
+                    <div class="right-event">
+                        <h4>Magic Media</h4>
+                        <a href="#">
+                            <p><i class="fas fa-map-marker-alt"></i> Sceincefiction Perks</p>
+                        </a>
+                        <a href="#">More Info</a>
+                    </div>
+                    <!-- Right Event Ends -->
+                </div>
+                <!-- Event Ends -->
+
+                <!-- Event Starts -->
+                <div class="event">
+
+                    <!-- Left Event Starts -->
+                    <div class="left-event">
+                        <h3>16<sup>th</sup> </h3>
+                        <span>November</span>
+                    </div>
+                    <!-- Left Event Ends -->
+
+                    <!-- Right Event Starts -->
+                    <div class="right-event">
+                        <h4>Magic Media</h4>
+                        <a href="#">
+                            <p><i class="fas fa-map-marker-alt"></i> Sceincefiction Perks</p>
+                        </a>
+                        <a href="#">More Info</a>
+                    </div>
+                    <!-- Right Event Ends -->
+                </div>
+                <!-- Event Ends -->
+
+                <!-- Event Starts -->
+                <div class="event">
+
+                    <!-- Left Event Starts -->
+                    <div class="left-event">
+                        <h3>16<sup>th</sup> </h3>
+                        <span>November</span>
+                    </div>
+                    <!-- Left Event Ends -->
+
+                    <!-- Right Event Starts -->
+                    <div class="right-event">
+                        <h4>Magic Media</h4>
+                        <a href="#">
+                            <p><i class="fas fa-map-marker-alt"></i> Sceincefiction Perks</p>
+                        </a>
+                        <a href="#">More Info</a>
+                    </div>
+                    <!-- Right Event Ends -->
+                </div>
+                <!-- Event Ends -->
+
+                <!-- Event Starts -->
+                <div class="event">
+
+                    <!-- Left Event Starts -->
+                    <div class="left-event">
+                        <h3>16<sup>th</sup> </h3>
+                        <span>November</span>
+                    </div>
+                    <!-- Left Event Ends -->
+
+                    <!-- Right Event Starts -->
+                    <div class="right-event">
+                        <h4>Magic Media</h4>
+                        <a href="#">
+                            <p><i class="fas fa-map-marker-alt"></i> Sceincefiction Perks</p>
+                        </a>
+                        <a href="#">More Info</a>
+                    </div>
+                    <!-- Right Event Ends -->
+                </div>
+                <!-- Event Ends -->
+
+                <!-- Event Starts -->
+                <div class="event">
+
+                    <!-- Left Event Starts -->
+                    <div class="left-event">
+                        <h3>19<sup>th</sup> </h3>
+                        <span>August</span>
+                    </div>
+                    <!-- Left Event Ends -->
+
+                    <!-- Right Event Starts -->
+                    <div class="right-event">
+                        <h4>New World</h4>
+                        <a href="#">
+                            <p><i class="fas fa-map-marker-alt"></i> Wikepidia Tech Perks</p>
+                        </a>
+                        <a href="#">More Info</a>
+                    </div>
+                    <!-- Right Event Ends -->
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/advertisement.png" class="sidebar-adds">
+
+            <div class="sidebar-title">
+                <h4>Converstion</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png">
+                </div>
+                <p>Dongsfing Soms</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png">
+                </div>
+                <p>Venom Grill</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png">
+                </div>
+                <p>Jems Bigger</p>
+            </div>
+            <!-- Event Ends -->
+            <!-- <section>
+                <div id="dark-btn">
+                    <span id="darkBtnSpan"></span>
+                </div>
+
+                <-!--- Dark Btn JS ----- >
+                <script>
+                    const darkBtn = document.querySelector("#dark-btn");
+                    const DarkBtnSpan = document.querySelector("#darkBtnSpan");
+
+                    darkBtn.onclick = function() {
+                        darkBtn.classList.toggle("dark-btn-on");
+                        DarkBtnSpan.classList.toggle("dark-btn-span");
+                    }
+                </script>
+            </section>
+ -->
+
+        </div>
+        <!-- Right Container Ends -->
+    </div>
+    <!-- Container Ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script src=""></script> -->
+    <!-- 
+    <div class="sectionMid">
+        <div class="counteinerMid">
+            <-!-- Content --- >
+        </div>
+        <div class="counteinerMidZ">
+            <div id="counteinerMidZ"> -->
+    <main>
+        <div class="main-a">
+
+            <div id="addPost">
+
+                <div class="container-a">
+                    <div class="form-page-a">
+                        <div class="post-heading">
+                            <h1>Create Post</h1>
+                            <div class="hover-btn">
+                                <button class="close-btn-a close-button-color" id="magic">Close <i class="fa-solid fa-xmark"></i></button>
+
+                                <div id="Alerte">
+                                    <div class="alert">
+                                        <div class="alert-text">
+                                            <i class="fa-solid fa-circle-exclamation"></i>
+                                            <p>Are you sure to Discard Your Post!</p>
+                                        </div>
+                                        <div class="alert-bton">
+                                            <button class="alert-cancel" id="CancelPost">Cancel</button>
+                                            <button class="alert-okey" id="CreatePost">Okey</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="user-pro-a">
+                            <div class="user-pro-b">
+                                <div class="user-pro-photo online2">
+                                    <img src="images/profile-pic.png" class=" ">
+                                </div>
+
+                                <div class="user-name-a">
+                                    <p>Syed Amir Ali</p>
+                                    <small>Public <i class="fas fa-caret-down"> </i></small>
+                                </div>
+
+                                <div class="main-post">
+                                    <div class="main_txt"><textarea class="main_txt" placeholder="What's on your Mind, Amir?"></textarea></div>
+
+
+                                </div>
+
+                                <div class="bg-selector">
+                                    <div class="icon-a">
+                                        <i><button>Aa</button></i>
+                                        <i class="fa-solid fa-face-smile fi"></i>
+                                    </div>
+                                </div>
+                                <div class="emoge-selector">
+                                    <span class="tag1"> Add Your Post</span>
+                                    <span class="emoji emoji1"><i class="fa-solid fa-camera"></i></span>
+                                    <span class="emoji emoji2"><i class="fa-solid fa-user-vneck-hair"></i></span>
+                                    <span class="emoji emoji3"><i class="fa-solid fa-video"></i></span>
+                                    <span class="emoji emoji4"><i class="fa-solid fa-location-dot"></i></span>
+                                    <span class="emoji emoji6"><i class="fa-solid fa-microphone"></i></span>
+                                    <span class="emoji emoji5"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post_submit" id="post_submit">Post</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- </div>
+        </div>
+    </div> -->
+</body>
+<script src="JavaScript/main.js"></script>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+nav {
+    display: flex;
+    background: var(--color-nav-bg);
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    padding: 5px 5%;
+    /* position: sticky; */
+    top: 0;
+    z-index: 400;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.logo {
+    width: 160px;
+    margin-right: 45px;
+}
+
+.navLeft{
+  flex-basis: 65%;
+}
+.navRight{
+  flex-basis: 35%;
+}
+
+.nav-left ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.nav-left ul li img {
+    width: 28px;
+    margin: 0 15px;
+}
+
+.nav-user-icon img {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    left: 20px;
+}
+
+.nav-user-icon img:active {
+    border: 3.5px solid var(--color-626262);
+}
+
+.nav-user-icon {
+    margin-left: 30px;
+    margin-right: -345px;
+}
+
+.search-box {
+    width: 350px;
+    background-color: var(--color-search-box-bg);
+    border-radius: 20px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.search-box img {
+    width: 15px;
+}
+
+.search-box input {
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background-color: transparent;
+    color: var(--color-ffe6e6);
+}
+
+.online {
+    position: relative;
+}
+
+.online::after {
+    content: "";
+    position: absolute;
+    height: 9px;
+    width: 9px;
+    border: 2px solid var(--color-fff);
+    border-radius: 50%;
+    top: 1px;
+    right: 1px;
+    background: var(--color-41db51);
+}
+
+ -->

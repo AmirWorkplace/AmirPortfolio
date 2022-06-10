@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,500;1,100;1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --color-DS: #22707c;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-202020: #202020;
+    --color-202020: #3a3b3c;
+    --color-9eb57d: #9eb57d;
+    --color-0eb57d: #0eb57d;
+    --color-1876f2: #1876f2;
+    --color-bg-efefef: #efefef;
+    --color-red: rgb(255, 0, 0);
+}
+
+.dark-theme {
+    --color-white: #000;
+    --color-black: #fff;
+    --color-202020: #cccccc;
+    --color-202020: #c7c7c7;
+    --color-bg-efefef: #1f1f1f;
+}
+
+
+
+.signup{
+
+  min-height: 100vh;
+  background-color: var(--color-black);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+#sign-up-section{ 
+  border-radius: 20px;  
+  background: linear-gradient(45deg, #fbda61, #ff5acd);
+  width: 370px;
+  height: 570px;
+  transition: all 1s ease;
+  z-index: -10;
+}
+
+#validationForm{
+  transition: all 1s ease;
+}
+
+#regBtn{
+  display: none;
+}
+
+.con_msg {
+  width: 100%;
+  height: 30px;
+  padding: 5px 30px;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1.5s ease;
+
+}
+
+.log-btn {
+  height: 16px;
+  width: 100%;
+  margin: -30px 0 15px 0;
+    font-weight: 700;
+  font-size: 18px;
+    border-bottom: 5px solid #fff;
+}
+
+.log-btn::after {
+  content: '';
+  height: 30px;
+  width: 30px;
+  background: var(--color-white);
+  border-radius: 50% 0% 0% 0%;
+  display: flex;
+  margin: -28px 0 0 245px;
+  justify-content: space-evenly;
+}
+
+.switch {
+  margin: -36px 0 0 0;
+
+  height: 50px;
+  width: 100px;
+
+  background: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1.5s;
+  cursor: pointer;
+
+  border-radius: 20px 20px 0px 0px;
+  z-index: -1;
+}
+
+.log-btn-main{
+  transition: 1.5s;
+}
+
+#logInBtn.active{
+  margin-left: 145px;
+}
+
+.sign-up{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -55px;
+  height: 80px;
+  width: 100%;
+}
+
+.sign-upTxt{
+  font-size: 16px;
+  display: inline;
+}
+
+
+.sign-upTxt p{
+  font-size: 22px;
+}
+
+
+
+.sign-upTxt p span:nth-child(1){
+    cursor: pointer;
+  z-index: 50;
+
+}
+.sign-upTxt p span:nth-child(2){
+
+  display: none;
+
+
+}
+
+.sign-upTxt p span:nth-child(3) {
+
+    cursor: pointer;
+    z-index: 5;
+
+  }
+
+  .sign-form-title{
+    display: flex;
+
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 100;
+
+  }
+
+  .signupa, .logina{
+    z-index: 10;
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: #000;
+  }
+
+.signupa{
+  padding: 3px 0 0 10px;
+}
+
+.logina{
+padding: 3px 0 0 67px;
+}
+
+.submit-login{
+  margin-top: 35px;
+  display: none;
+}
+
+#LogInEmail,
+#logInPassword
+{
+  display: none;
+}
+
+#passUnHide01,
+#passUnHide02,
+#passUnHide03 
+{
+  position: absolute;
+  cursor: pointer;
+  margin: -37px 0 0 235px;
+  font-size: 20px;
+  padding: 8px;
+}
+
+.fa-eye{
+  color: #ff5db7;
+}
+
+.fa-eye-slash{
+  color: #007bff;
+}
+
+.signTitle{
+  color: var(--color-DS);
+  font-weight: bold;
+  filter: drop-shadow(0 0 17px var(--color-DS)) drop-shadow(0 0 25px var(--color-DS)) drop-shadow(0 0 25px var(--color-DS));
+}
+
+
+
+
+
+
+
+
+
+  /* 
+  -----------------------------------------
+  --------------Syed Amir Ali--------------
+  --------------faul comments--------------
+  -----------------------------------------
+  */
+
+  /* background: linear-gradient(45deg, #fbda61, #ff5acd); */
+  /* text-align: center; */
+  /* border: 1px solid black; */
+  /* border-radius: 20px; */
+  /* position: sticky; */
+
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* background: var(--color-black); */
+  /* padding: 2px; */
+      /* background: black; */
+    /* color: red; */
+    /* position: fixed; */
+    /* top: 0; */
+        /* position: absolute; */
+    /* right: 145px;
+    top: 15px; */
+        /* margin-bottom: 25px; */
+
+          /* position: absolute; */
+  /* top: 15px;
+  left: 128px;
+  padding: 5px 10px; */
+  
+  /* border-radius: 7px; */
+  /* border: 1px solid black; */
+  /* position: absolute; */
+  /* top: 16px; */
+/* .LogIn{display: none;}
+.signUP{display: block;} */
+
+  /* position: absolute; */
+    /* border: 1px solid black; */
+  /* background-color: #fff; */
+    /* position: absolute;  */
+    /* z-index: 1; */
+/* .containerr{
+
+} */
+
+
+/* .body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 105vh;
+    background: linear-gradient(45deg, #fbda61, #ff5acd);
+} */
+
+  /* filter: drop-shadow(0 0 15px cyan) drop-shadow(0 0 25px cyan) drop-shadow(0 0 35px cyan) drop-shadow(0 0 45px cyan)
+  
+  ;2dfc52
+  color: cyan; */
+
+

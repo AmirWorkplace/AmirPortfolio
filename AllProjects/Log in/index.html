@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create an Accounts</title>
+
+
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/register.css">
+  <link rel="stylesheet" href="../fontawesomeCSS/css/all.min.css">
+
+</head>
+<body>
+
+  <div class="signup">
+    <div class="containerr">
+      <div id="sign-up-section" class="shadow p-5 form-sec">
+        <form id="validationForm" action="">
+          <div class="sign-form-title">
+              <div class="signupa signTitle">Sign Up  
+                <!-- <i class="fa-solid fa-right-to-bracket"></i> -->
+              </div>
+              <div class="logina signTitle"> Log In <!-- <i class="fa-solid fa-right-to-bracket"></i> --></div>
+          </div>
+
+          <div class="title">
+            <div class="log-btn">
+              <div class="log-btn-main" id="logInBtn">
+                <div class="switch"></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="mb-3" id="usenam">
+            <label for="username" class="form-label">Enter Your UserName:</label>
+            <input type="text" name="username" placeholder="Type Here..." id="username" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Enter Your E-mail:</label>
+            <input type="email" name="email" id="emails" class="form-control" placeholder="Type Here..." required>
+
+            <input type="email" name="LogInEmail" id="LogInEmail" class="form-control" placeholder="Type Here..." required>
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-label">Enter Your Password:</label>
+            <div class="passwords">
+              <input type="password" name="password" id="password" placeholder="Type Here..." class="form-control passw03" required>
+              <i id="passUnHide03" class="fas fa-eye-slash"></i>
+            </div>
+
+            <div id="logInPassword">
+              <input type="password" name="logInPassword"  class="form-control passw02" placeholder="Type Here..." required>
+            <i id="passUnHide02" class="fas fa-eye-slash"></i>
+
+            </div>
+          </div>
+
+          <div class="conpass" id="conpassw">
+            <label for="confirmPassword" class="form-label">Confirm Your Password:</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" class="passw01 form-control" placeholder="Type Here..." required>
+            <i id="passUnHide01" class="fas fa-eye-slash"></i>
+            <p class="con_msg" id="conMsg"></p>
+          </div>
+
+          <label for="text" class="submit_label form-control btn btn-danger" id="submit_label">Please Fill-Up the Requrements!</label>
+
+          <input type="submit" value="GO!" class="btn form-control btn-primary" id="regBtn" name="regBtn">
+
+
+          <div id="submitLogIn" class="submit-login">
+            <input type="submit" value="GOO!"  class="form-control btn btn-primary">
+          </div>
+
+        </form><br>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="./JavaScript/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,500;1,100;1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-white);
+    background: var(--color-black);
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-202020: #202020;
+    --color-3a3b3c: #3a3b3c;
+    --color-9eb57d: #9eb57d;
+    --color-0eb57d: #0eb57d;
+    --color-1876f2: #1876f2;
+    --color-bg-efefef: #efefef;
+    --color-red: rgb(255, 0, 0);
+    /* Text*/
+    --text-color-white: #fff;
+    ---text-color-black: #000;
+    --text-color-light-white: #ccc;
+    ---text-color-light-black: #494949;
+    
+}
+
+.dark-theme {
+    --color-white: #000;
+    --color-black: #fff;
+    --color-202020: #cccccc;
+    --color-3a3b3c: #c7c7c7;
+    --color-bg-efefef: #1f1f1f;
+
+    /*text*/
+    --text-color-white: #000;
+    ---text-color-black: #fff;
+    --text-color-light-white: #494949;
+    ---text-color-light-black: #ccc;
+}
+
+body{
+  overflow: hidden;
+  height: 100vh;
+  background: var(--color-black);
+}
+
+i
+{
+  position: absolute;
+  height: 200px;
+  background: linear-gradient(transparent, #fff);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  animation: animate 5s linear infinite;
+}
+
+i:nth-child(3n+1){
+  background: linear-gradient(transparent, #0ff);
+}
+
+i:nth-child(3n+2){
+  background: linear-gradient(transparent, #0f0);
+}
+
+i:nth-child(3n+3){
+  background: linear-gradient(transparent, #f00);
+}
+
+@keyframes animate
+{
+  0%
+  {
+    transform: translateY(-200px);
+  }
+  100%
+  {
+    transform: translateY(calc(100vh + 200px));
+  }
+}
+
+/* i:nth-child(3n+1){
+  background: linear-gradient(transparent, #0ff);
+} */

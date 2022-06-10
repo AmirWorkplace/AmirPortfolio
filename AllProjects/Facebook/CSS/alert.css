@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,500;1,100;1,500&display=swap');
+@import "./fontawesome/scss/fontawesome.scss";
+@import "./fontawesome/scss/solid.scss";
+@import "./fontawesome/scss/brands.scss";
+
+/* for Duotones need both files */
+
+@import "./fontawesome/scss/duotone.scss";
+@import "./fontawesome/scss/_duotone-icons.scss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --color-cyan: cyan;
+    --color-efefef: #efefef;
+    --color-0eb57d: #0eb57d;
+    --color-626262: #626262;
+    --color-fff: #fff;
+    --color-1876f2: #1876f2;
+    --color-efefef: #efefef;
+    --color-41db51: #41db51;
+    --color-cbdffa: #cbdffa;
+    --color-626262: #626262;
+    --color-ccc: #ccc;
+    --color-9a9a9a: #5d5d5d;
+    --color-62626278: #62626278;
+    --color-aTag-007bff: #007bff;
+}
+
+body {
+    background: var(--color-efefef);
+}
+
+.alert-cancel,
+.alert-okey {
+    padding: 0px 7px;
+    border-radius: 21px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.alert-cancel:hover {
+    color: #ffffffff;
+    background-color: darkmagenta;
+    transition: 0.4s;
+}
+
+.alert-okey:hover {
+    color: #ffffffff;
+    background-color: green;
+    transition: 0.4s;
+}
+
+.alert-box {
+    position: relative;
+}
+
+.alert {
+    position: absolute;
+    border: 1px solid;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0px 0px -325px;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    z-index: 300;
+    background: #d5b8b8;
+    padding: 5px 10px;
+}
+
+.alert-bton {
+    text-align: end;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.alert-text i {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: #944b00;
+    padding: 5px 0px 0px 74px;
+}
+
+.alert-text p {
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 0 30px 0px;
+}
+
+#Alerte {
+    display: none;
+}
+
+
+/* #AddPost {
+    display: none;
+} */

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,500;1,100;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-202020: #202020;
+  --color-202020: #3a3b3c;
+  --color-9eb57d: #9eb57d;
+  --color-0eb57d: #0eb57d;
+  --color-1876f2: #1876f2;
+  --color-bg-efefef: #efefef;
+  --color-red: rgb(255, 0, 0);
+}
+
+.dark-theme {
+  --color-white: #000;
+  --color-black: #fff;
+  --color-202020: #cccccc;
+  --color-202020: #c7c7c7;
+  --color-bg-efefef: #1f1f1f;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  display: none;
+  background: var(--color-black);
+  display: none;
+}
+
+.navigation {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background: #212532;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  transition-delay: 0.8s;
+}
+
+
+/* Navigation toggle class */
+
+.navigation.active {
+  height: 200px;
+  width: 200px;
+  transition-delay: 0.8s;
+}
+
+
+/* Navigation toggle class */
+
+.navigation span {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-white);
+  transform: translate(calc(12px * var(--x)), calc(12px * var(--y)));
+  transition: all 0.5s ease;
+  transition-delay: calc(0.15s * var(--i));
+}
+
+.navigation.active span {
+  width: 45px;
+  height: 45px;
+  background: var(--color-202020);
+  transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
+}
+
+.navigation span ion-icon {
+  transition: 0.5s;
+  font-size: 0rem;
+}
+
+.navigation.active span ion-icon {
+  font-size: 1.4rem;
+  color: var(--color-white);
+}
+
+.navigation.active span:hover ion-icon {
+  color: #2dfc52;
+  filter: drop-shadow(0 0 2px #2dfc52) drop-shadow(0 0 5px #2dfc52) drop-shadow(0 0 15px #2dfc52);
+}

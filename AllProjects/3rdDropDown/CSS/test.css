@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,500;1,100;1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ :root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-202020: #202020;
+    --color-202020: #3a3b3c;
+    --color-9eb57d: #9eb57d;
+    --color-0eb57d: #0eb57d;
+    --color-1876f2: #1876f2;
+    --color-455bf9: #455bf9;
+    --color-ff4d89: #ff4d89;
+    --color-bg-efefef: #efefef;
+    --color-red: rgb(255, 0, 0);
+}
+
+
+/* .dark-theme {
+    --color-white: #000;
+    --color-black: #fff;
+    --color-202020: #cccccc;
+    --color-202020: #c7c7c7;
+    --color-bg-efefef: #1f1f1f;
+} */
+
+body {
+    min-height: 100vh;
+    background-color: var(--color-white);
+    /* display: flex; */
+}
+
+.navigation {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    width: 62px;
+    border-radius: 10px;
+    box-sizing: initial;
+    transition: width 0.5s;
+    overflow-x: hidden;
+    border-left: 5px solid var(--color-455bf9);
+    background-color: var(--color-455bf9);
+}
+
+.navigation.active {
+    width: 250px;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.navigation ul li.active {
+    background-color: var(--color-white)
+}
+
+.navigation ul li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.navigation ul li b:nth-child(1) {
+    position: absolute;
+    top: -20px;
+    height: 20px;
+    width: 100%;
+    background-color: var(--color-white);
+    display: none;
+}
+
+.navigation ul li b:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-bottom-right-radius: 20px;
+    background-color: #4d5bf9;
+}
+
+.navigation ul li b:nth-child(2) {
+    position: absolute;
+    bottom: -20px;
+    height: 20px;
+    width: 100%;
+    background-color: var(--color-white);
+    display: none;
+}
+
+.navigation ul li b:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 20px;
+    background-color: #4d5bf9;
+}
+
+
+/* .navigation ul li.active b:nth-child(1),
+.navigation ul li.active b:nth-child(2) {
+    display: block;
+} */
+
+.active .navigation ul li a {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color: var(--color-white);
+    display: flex;
+    text-decoration: none;
+}
+
+.navigation ul li.active a {
+    color: var(--color-black)
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.navigation ul li a .icon ion-icon {
+    font-size: 1.5rem;
+}
+
+.navigation ul li a .title {
+    left: 12px;
+    position: relative;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    white-space: normal;
+}
+
+.toggle {
+    top: 20px;
+    left: 320px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: var(--color-white);
+    background-color: var(--color-455bf9);
+}
+
+.toggle.dMaching {
+    left: 60px;
+}
+
+.toggle.actives {
+    background-color: var(--color-ff4d89)
+}
+
+.toggle ion-icon {
+    color: var(--color-white);
+    font-size: 34px;
+    position: absolute;
+    display: none;
+}
+
+.toggle ion-icon.open,
+.toggle.actives ion-icon.close {
+    display: block;
+}
+
+.toggle ion-icon.close,
+.toggle.actives ion-icon.open {
+    display: none;
+}
